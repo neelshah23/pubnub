@@ -15,16 +15,6 @@
 //        secret_key    : 'sec-c-ODhkZTRkZTktMjc0OC00NmIxLTgwYjUtODA1NTYyOTA1ZDZj'
     });
 
-//    PUBNUB_demo.grant({
-//        channel: 'nss',
-//        auth_key: '123nlsdnflkasdlkfmlkasmdfk',
-//        read: true,
-//        write: true,
-//        ttl: 5,
-//        callback: function(m){
-//           $("body").append("<p>"+m.text+"</p>");
-//        }
-//    });
     PUBNUB_demo.subscribe({
         channel: 'nss',
         message: function(m){
